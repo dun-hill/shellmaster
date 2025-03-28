@@ -54,6 +54,12 @@ jobs:
         with:
           path: ./public
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: build-files
+          path: ./dist
+
   deploy:
     environment:
       name: github-pages
