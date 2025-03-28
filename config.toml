@@ -1,0 +1,45 @@
+# Basic site settings
+baseURL = "https://yourusername.github.io/"  # Replace with your GitHub username
+languageCode = "en-us"
+title = "Linux Command Guide"
+theme = "PaperMod"  # Replace with your theme name
+
+# Enable syntax highlighting for code
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+# Content settings
+[params]
+  # Site description - good for SEO
+  description = "Practical guides and tutorials for Linux commands and administration"
+  
+  # Define your main content section (usually "posts")
+  mainSections = ["posts"]
+  
+  # Show article summaries on homepage
+  showSummary = true
+  
+  # Display settings
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  
+  # Homepage information
+  [params.homeInfoParams]
+    Title = "Linux Command Guide"
+    Content = "Your comprehensive resource for Linux commands, system administration, and troubleshooting guides."
+
+# Pagination settings
+paginate = 5
+
+# Enable tags and categories
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+googleAnalytics = G-NN9WTHX745
